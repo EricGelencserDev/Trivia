@@ -64,7 +64,7 @@ class Game {
             category: _this.currentQuestion.category,
             points: _this.currentQuestion.points,
             answers: answers
-          })  
+          })
         });
         _this.players.forEach((player) => {
           player.socket.on('answer', _this.checkAnswer.bind(_this, player));
